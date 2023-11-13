@@ -17,9 +17,18 @@ namespace pryMilagrosChaconIE
         private const string usuarioCorrecto = "Milagros";
         private const string contraseñaCorrecta = "1913";
 
+        private void FrmInicio_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
+        }
+
         public FrmInicio()
         {
             InitializeComponent();
+            this.KeyDown += new KeyEventHandler(FrmInicio_KeyDown);
         }
 
         private void btnIniciarSesion_Click(object sender, EventArgs e)

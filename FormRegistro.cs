@@ -14,9 +14,17 @@ namespace pryMilagrosChaconIE
 {
     public partial class FormRegistro : Form
     {
+        private void FormRegistro_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
+        }
         public FormRegistro()
         {
             InitializeComponent();
+            this.KeyDown += new KeyEventHandler(FormRegistro_KeyDown);
 
             string leerlinea = "";
             string[] separarDatos = new string[0];

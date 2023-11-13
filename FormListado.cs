@@ -15,9 +15,19 @@ namespace pryMilagrosChaconIE
     {
         string leerLinea;
         string[] separarDatos;
+
+        private void FormListado_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
+        }
+
         public FormListado()
         {
             InitializeComponent();
+            this.KeyDown += new KeyEventHandler(FormListado_KeyDown);
         }
 
         private void btnConsultar_Click(object sender, EventArgs e)

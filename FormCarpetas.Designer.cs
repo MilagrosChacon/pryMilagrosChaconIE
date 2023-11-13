@@ -33,11 +33,11 @@
             this.pctVolver = new System.Windows.Forms.PictureBox();
             this.pctLogo = new System.Windows.Forms.PictureBox();
             this.lstMostrar = new System.Windows.Forms.ListView();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.trvMostrar = new System.Windows.Forms.TreeView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.trvMostrar = new System.Windows.Forms.TreeView();
             ((System.ComponentModel.ISupportInitialize)(this.pctVolver)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).BeginInit();
             this.SuspendLayout();
@@ -78,6 +78,19 @@
             this.lstMostrar.UseCompatibleStateImageBehavior = false;
             this.lstMostrar.View = System.Windows.Forms.View.Details;
             // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Nombre";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Tipo";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Última modificación";
+            this.columnHeader3.Width = 125;
+            // 
             // imageList1
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
@@ -96,19 +109,6 @@
             this.trvMostrar.TabIndex = 15;
             this.trvMostrar.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.trvMostrar_NodeMouseClick);
             // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Nombre";
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Tipo";
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Última modificación";
-            this.columnHeader3.Width = 125;
-            // 
             // FormCarpetas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -120,6 +120,7 @@
             this.Controls.Add(this.pctLogo);
             this.Controls.Add(this.pctVolver);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "FormCarpetas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

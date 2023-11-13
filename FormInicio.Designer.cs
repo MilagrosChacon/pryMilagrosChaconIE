@@ -46,7 +46,7 @@
             // 
             this.pctLogo.BackColor = System.Drawing.Color.Transparent;
             this.pctLogo.Image = global::pryMilagrosChaconIE.Properties.Resources.logo_huella;
-            this.pctLogo.Location = new System.Drawing.Point(-9, 0);
+            this.pctLogo.Location = new System.Drawing.Point(-18, 28);
             this.pctLogo.Name = "pctLogo";
             this.pctLogo.Size = new System.Drawing.Size(170, 144);
             this.pctLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -59,7 +59,7 @@
             this.lblCyberSecure.BackColor = System.Drawing.Color.Transparent;
             this.lblCyberSecure.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCyberSecure.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblCyberSecure.Location = new System.Drawing.Point(112, 50);
+            this.lblCyberSecure.Location = new System.Drawing.Point(103, 78);
             this.lblCyberSecure.Name = "lblCyberSecure";
             this.lblCyberSecure.Size = new System.Drawing.Size(237, 42);
             this.lblCyberSecure.TabIndex = 1;
@@ -71,7 +71,7 @@
             this.lblEslogan.BackColor = System.Drawing.Color.Transparent;
             this.lblEslogan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEslogan.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblEslogan.Location = new System.Drawing.Point(115, 92);
+            this.lblEslogan.Location = new System.Drawing.Point(106, 120);
             this.lblEslogan.Name = "lblEslogan";
             this.lblEslogan.Size = new System.Drawing.Size(228, 20);
             this.lblEslogan.TabIndex = 2;
@@ -87,7 +87,7 @@
             this.grpIniciarSesion.Controls.Add(this.lblUsuario);
             this.grpIniciarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpIniciarSesion.ForeColor = System.Drawing.SystemColors.Window;
-            this.grpIniciarSesion.Location = new System.Drawing.Point(35, 124);
+            this.grpIniciarSesion.Location = new System.Drawing.Point(26, 152);
             this.grpIniciarSesion.Name = "grpIniciarSesion";
             this.grpIniciarSesion.Size = new System.Drawing.Size(308, 157);
             this.grpIniciarSesion.TabIndex = 3;
@@ -149,6 +149,7 @@
             // 
             // FrmInicio
             // 
+            this.AcceptButton = this.btnIniciarSesion;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::pryMilagrosChaconIE.Properties.Resources.fondo_inicio;
@@ -159,6 +160,7 @@
             this.Controls.Add(this.lblCyberSecure);
             this.Controls.Add(this.pctLogo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "FrmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

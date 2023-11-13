@@ -13,9 +13,17 @@ namespace pryMilagrosChaconIE
 {
     public partial class FormCarpetas : Form
     {
+        private void FormCarpetas_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
+        }
         public FormCarpetas()
         {
             InitializeComponent();
+            this.KeyDown += new KeyEventHandler(FormCarpetas_KeyDown);
             PopulateTreeView();
         }
         private void PopulateTreeView()

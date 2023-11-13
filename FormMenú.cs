@@ -12,9 +12,17 @@ namespace pryMilagrosChaconIE
 {
     public partial class FormMenú : Form
     {
+        private void FormMenú_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
+        }
         public FormMenú()
         {
             InitializeComponent();
+            this.KeyDown += new KeyEventHandler(FormMenú_KeyDown);
         }
 
         private void btnListado_Click(object sender, EventArgs e)

@@ -116,6 +116,7 @@
             this.Controls.Add(this.pctLogo);
             this.Controls.Add(this.pctVolver);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "FormMenú";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
