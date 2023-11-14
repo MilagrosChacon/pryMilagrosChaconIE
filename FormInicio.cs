@@ -28,7 +28,6 @@ namespace pryMilagrosChaconIE
         }
 
         int intentos = 0;
-
         clsControladorDataBase control = new clsControladorDataBase();
         clsLogs logs = new clsLogs();
 
@@ -37,24 +36,28 @@ namespace pryMilagrosChaconIE
             string usuario = txtUsuario.Text;
             string contraseña = txtContraseña.Text;
 
+            bool acceso = control.BuscarContraseña (usuario, contraseña);
 
-            clsControladorDataBase login = new clsControladorDataBase();
-            clsLogs objLogs = new clsLogs();
 
-            if (clsControladorDataBase.acceso == true)
+            if (acceso)
             {
-                objLogs.RegistroInicioExitoso();
-
+                logs.RegistroInicioExitoso();
                 this.Hide();
+
                 FrmInicio FrmInicio = new FrmInicio();
                 FrmInicio.Show();
             }
             else
             {
-                objLogs.RegistroInicioFallido();
+                logs.RegistroInicioFallido();
+                MessageBox.Show("Usuario o contraseña incorrecto", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                intentos++;
 
-                MessageBox.Show("Usuario o contraeña incorrecto", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+                if (intentos >= 3)
+                {
+                    MessageBox.Show("Se han superado los intentos permitidos.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    this.Close();
+                }
             }
         }
 
