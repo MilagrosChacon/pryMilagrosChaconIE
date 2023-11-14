@@ -28,6 +28,7 @@ namespace pryMilagrosChaconIE
         }
 
         int intentos = 0;
+
         clsControladorDataBase control = new clsControladorDataBase();
         clsLogs logs = new clsLogs();
 
@@ -36,8 +37,8 @@ namespace pryMilagrosChaconIE
             string usuario = txtUsuario.Text;
             string contraseña = txtContraseña.Text;
 
-            clsControladorDataBase login = new clsControladorDataBase();
 
+            clsControladorDataBase login = new clsControladorDataBase();
             clsLogs objLogs = new clsLogs();
 
             if (clsControladorDataBase.acceso == true)
