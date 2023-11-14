@@ -35,6 +35,7 @@
             this.btnCarpetas = new System.Windows.Forms.Button();
             this.pctLogo = new System.Windows.Forms.PictureBox();
             this.pctVolver = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctVolver)).BeginInit();
             this.SuspendLayout();
@@ -52,9 +53,9 @@
             // btnListado
             // 
             this.btnListado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListado.Location = new System.Drawing.Point(74, 234);
+            this.btnListado.Location = new System.Drawing.Point(66, 234);
             this.btnListado.Name = "btnListado";
-            this.btnListado.Size = new System.Drawing.Size(254, 51);
+            this.btnListado.Size = new System.Drawing.Size(271, 51);
             this.btnListado.TabIndex = 3;
             this.btnListado.Text = "LISTADO DE PROVEEDORES";
             this.btnListado.UseVisualStyleBackColor = true;
@@ -63,20 +64,20 @@
             // btnRegistro
             // 
             this.btnRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistro.Location = new System.Drawing.Point(74, 291);
+            this.btnRegistro.Location = new System.Drawing.Point(66, 291);
             this.btnRegistro.Name = "btnRegistro";
-            this.btnRegistro.Size = new System.Drawing.Size(254, 51);
+            this.btnRegistro.Size = new System.Drawing.Size(271, 51);
             this.btnRegistro.TabIndex = 4;
-            this.btnRegistro.Text = "REGISTRO DE PROVEEDORES";
+            this.btnRegistro.Text = "REGISTRO DE PROVEEDORES (ABM)";
             this.btnRegistro.UseVisualStyleBackColor = true;
             this.btnRegistro.Click += new System.EventHandler(this.btnRegistro_Click);
             // 
             // btnCarpetas
             // 
             this.btnCarpetas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCarpetas.Location = new System.Drawing.Point(74, 348);
+            this.btnCarpetas.Location = new System.Drawing.Point(66, 348);
             this.btnCarpetas.Name = "btnCarpetas";
-            this.btnCarpetas.Size = new System.Drawing.Size(254, 51);
+            this.btnCarpetas.Size = new System.Drawing.Size(271, 51);
             this.btnCarpetas.TabIndex = 5;
             this.btnCarpetas.Text = "CARPETAS";
             this.btnCarpetas.UseVisualStyleBackColor = true;
@@ -103,12 +104,24 @@
             this.pctVolver.TabStop = false;
             this.pctVolver.Click += new System.EventHandler(this.pctVolver_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(66, 405);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(271, 51);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "EL CLUB";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormMenú
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(403, 450);
+            this.ClientSize = new System.Drawing.Size(403, 492);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnCarpetas);
             this.Controls.Add(this.btnRegistro);
             this.Controls.Add(this.btnListado);
@@ -136,5 +149,6 @@
         private System.Windows.Forms.Button btnListado;
         private System.Windows.Forms.Button btnRegistro;
         private System.Windows.Forms.Button btnCarpetas;
+        private System.Windows.Forms.Button button1;
     }
 }

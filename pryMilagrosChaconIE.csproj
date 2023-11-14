@@ -68,6 +68,12 @@
     <Compile Include="FormCarpetas.Designer.cs">
       <DependentUpon>FormCarpetas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormELCLUB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormELCLUB.Designer.cs">
+      <DependentUpon>FormELCLUB.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormListado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormCarpetas.resx">
       <DependentUpon>FormCarpetas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormELCLUB.resx">
+      <DependentUpon>FormELCLUB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormListado.resx">
       <DependentUpon>FormListado.cs</DependentUpon>

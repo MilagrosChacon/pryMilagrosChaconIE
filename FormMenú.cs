@@ -46,11 +46,19 @@ namespace pryMilagrosChaconIE
             Carpetas.Show();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form ELCLUB = new FormELCLUB();
+            ELCLUB.Show();
+        }
+
         private void pctVolver_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form volver = new FrmInicio();
             volver.Show();
         }
+
     }
 }

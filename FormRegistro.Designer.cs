@@ -310,7 +310,7 @@
             this.MaximizeBox = false;
             this.Name = "FormRegistro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Registro de proveedores";
+            this.Text = "Registro de proveedores (ABM)";
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).EndInit();
             this.grpNuevoProv.ResumeLayout(false);
             this.grpNuevoProv.PerformLayout();
