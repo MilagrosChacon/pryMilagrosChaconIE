@@ -35,11 +35,11 @@
             this.lblIDCliente = new System.Windows.Forms.Label();
             this.txtIDCliente = new System.Windows.Forms.TextBox();
             this.tabApellido = new System.Windows.Forms.TabPage();
+            this.txtApellidoCliente = new System.Windows.Forms.TextBox();
             this.btnBuscarApellido = new System.Windows.Forms.Button();
             this.lblApellidoCliente = new System.Windows.Forms.Label();
             this.pctVolver = new System.Windows.Forms.PictureBox();
             this.pctLogo = new System.Windows.Forms.PictureBox();
-            this.txtApellidoCliente = new System.Windows.Forms.TextBox();
             this.grpBuscarCliente = new System.Windows.Forms.GroupBox();
             this.grpEstado = new System.Windows.Forms.GroupBox();
             this.btnCambiar = new System.Windows.Forms.Button();
@@ -101,6 +101,7 @@
             this.btnBuscarID.TabIndex = 15;
             this.btnBuscarID.Text = "Buscar";
             this.btnBuscarID.UseVisualStyleBackColor = true;
+            this.btnBuscarID.Click += new System.EventHandler(this.btnBuscarID_Click);
             // 
             // lblIDCliente
             // 
@@ -132,6 +133,13 @@
             this.tabApellido.Text = "Apellido";
             this.tabApellido.UseVisualStyleBackColor = true;
             // 
+            // txtApellidoCliente
+            // 
+            this.txtApellidoCliente.Location = new System.Drawing.Point(61, 48);
+            this.txtApellidoCliente.Name = "txtApellidoCliente";
+            this.txtApellidoCliente.Size = new System.Drawing.Size(205, 21);
+            this.txtApellidoCliente.TabIndex = 26;
+            // 
             // btnBuscarApellido
             // 
             this.btnBuscarApellido.FlatStyle = System.Windows.Forms.FlatStyle.System;
@@ -143,6 +151,7 @@
             this.btnBuscarApellido.TabIndex = 23;
             this.btnBuscarApellido.Text = "Buscar";
             this.btnBuscarApellido.UseVisualStyleBackColor = true;
+            this.btnBuscarApellido.Click += new System.EventHandler(this.btnBuscarApellido_Click);
             // 
             // lblApellidoCliente
             // 
@@ -173,13 +182,6 @@
             this.pctLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctLogo.TabIndex = 8;
             this.pctLogo.TabStop = false;
-            // 
-            // txtApellidoCliente
-            // 
-            this.txtApellidoCliente.Location = new System.Drawing.Point(61, 48);
-            this.txtApellidoCliente.Name = "txtApellidoCliente";
-            this.txtApellidoCliente.Size = new System.Drawing.Size(205, 21);
-            this.txtApellidoCliente.TabIndex = 26;
             // 
             // grpBuscarCliente
             // 
@@ -216,6 +218,7 @@
             this.btnCambiar.TabIndex = 23;
             this.btnCambiar.Text = "Cambiar";
             this.btnCambiar.UseVisualStyleBackColor = true;
+            this.btnCambiar.Click += new System.EventHandler(this.btnCambiar_Click);
             // 
             // lblIDClienteEstado
             // 
@@ -248,6 +251,7 @@
             this.Name = "FormELCLUB";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EL CLUB - BD";
+            this.Load += new System.EventHandler(this.FormELCLUB_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).EndInit();
             this.tabBuscarCliente.ResumeLayout(false);
             this.tabID.ResumeLayout(false);

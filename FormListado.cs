@@ -30,6 +30,8 @@ namespace pryMilagrosChaconIE
             this.KeyDown += new KeyEventHandler(FormListado_KeyDown);
         }
 
+        clsLogs logs = new clsLogs();
+
         private void btnConsultar_Click(object sender, EventArgs e)
         {
             StreamReader sr = new StreamReader(@"../../" + "Resources/Listado de aseguradores.csv");

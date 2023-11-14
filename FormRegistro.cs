@@ -21,6 +21,7 @@ namespace pryMilagrosChaconIE
                 this.Close();
             }
         }
+
         public FormRegistro()
         {
             InitializeComponent();
@@ -49,6 +50,8 @@ namespace pryMilagrosChaconIE
 
             grilla.Close();
         }
+
+        clsLogs logs = new clsLogs();
 
         private void btnModificar_Click(object sender, EventArgs e)
         {

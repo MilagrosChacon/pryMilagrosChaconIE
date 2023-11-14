@@ -26,6 +26,8 @@ namespace pryMilagrosChaconIE
             this.KeyDown += new KeyEventHandler(FormCarpetas_KeyDown);
             PopulateTreeView();
         }
+
+        clsLogs logs = new clsLogs();
         private void PopulateTreeView()
         {
             TreeNode rootNode;
