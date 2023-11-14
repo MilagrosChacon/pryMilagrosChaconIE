@@ -122,5 +122,48 @@ namespace pryMilagrosChaconIE
         {
             InsertarLog("Iniciar sesión", "Inicio de sesión fallido");
         }
+
+        public void RegistroEstadoActivo()
+        {
+            try
+            {
+                // Establezco la conexión con la base de datos
+                ConectarBD();
+
+                // Creación de un nuevo comando para trabajar con la tabla "Logs"
+                comandoBD = new OleDbCommand();
+                comandoBD.Connection = conexionBD;
+                comandoBD.CommandType = System.Data.CommandType.TableDirect;
+                comandoBD.CommandText = "Logs";
+
+                // Creación de un adaptador de datos y llena el DataSet con los datos de la tabla "Logs"
+                adaptadorBD = new OleDbDataAdapter(comandoBD);
+                adaptadorBD.Fill(objDataSet, "Logs");
+
+                // Creación de un nuevo registro en la tabla "Logs"
+                DataTable objTabla = objDataSet.Tables["Logs"];
+                DataRow registro = objTabla.NewRow();
+                registro["Categoría"] = "Cambiar estado";
+                registro["Fecha/Hora"] = DateTime.Now;
+                registro["Descripción"] = "Exitoso";
+
+                // Agrega el nuevo registro a la tabla "Logs"
+                objTabla.Rows.Add(registro);
+
+                // Creación de un constructor de comandos para el adaptador
+                OleDbCommandBuilder constructor = new OleDbCommandBuilder(adaptadorBD);
+
+                // Actualización de la base de datos con los cambios en el DataSet
+                adaptadorBD.Update(objDataSet, "Logs");
+
+                // Establezco el estado de conexión como "Se ha registrado con éxito"
+                estadoConexion = "Se ha registrado con éxito";
+            }
+            catch (Exception EX)
+            {
+                // En caso de error, establecezco el estado de conexión con el mensaje de la excepción
+                estadoConexion = EX.Message;
+            }
+        }
     }
 }
