@@ -15,8 +15,8 @@ namespace pryMilagrosChaconIE
         OleDbConnection conexionBD;
         OleDbCommand comandoBD;
         OleDbDataReader lectorBD;
-
         OleDbDataAdapter adaptadorBD;
+
         DataSet objDataSet = new DataSet();
 
         string rutaBD;
@@ -71,6 +71,7 @@ namespace pryMilagrosChaconIE
                 comandoBD = new OleDbCommand();
                 comandoBD.Connection = conexionBD;
                 comandoBD.CommandType = System.Data.CommandType.TableDirect;
+                comandoBD.CommandText = "Logs";
 
                 adaptadorBD = new OleDbDataAdapter(comandoBD);
                 adaptadorBD.Fill(objDataSet, "Logs"); 
@@ -103,6 +104,7 @@ namespace pryMilagrosChaconIE
                 comandoBD = new OleDbCommand();
                 comandoBD.Connection = conexionBD;
                 comandoBD.CommandType = System.Data.CommandType.TableDirect;
+                comandoBD.CommandText = "Logs";
 
                 adaptadorBD = new OleDbDataAdapter(comandoBD);
                 adaptadorBD.Fill(objDataSet, "Logs");
@@ -134,6 +136,7 @@ namespace pryMilagrosChaconIE
                 comandoBD = new OleDbCommand();
                 comandoBD.Connection = conexionBD;
                 comandoBD.CommandType = System.Data.CommandType.TableDirect;
+                comandoBD.CommandText = "Logs";
 
                 adaptadorBD = new OleDbDataAdapter(comandoBD);
                 adaptadorBD.Fill(objDataSet, "Logs");
@@ -165,6 +168,7 @@ namespace pryMilagrosChaconIE
                 comandoBD = new OleDbCommand();
                 comandoBD.Connection = conexionBD;
                 comandoBD.CommandType = System.Data.CommandType.TableDirect;
+                comandoBD.CommandText = "Logs";
 
                 adaptadorBD = new OleDbDataAdapter(comandoBD);
                 adaptadorBD.Fill(objDataSet, "Logs");
@@ -196,6 +200,7 @@ namespace pryMilagrosChaconIE
                 comandoBD = new OleDbCommand();
                 comandoBD.Connection = conexionBD;
                 comandoBD.CommandType = System.Data.CommandType.TableDirect;
+                comandoBD.CommandText = "Logs";
 
                 adaptadorBD = new OleDbDataAdapter(comandoBD);
                 adaptadorBD.Fill(objDataSet, "Logs");
@@ -227,6 +232,7 @@ namespace pryMilagrosChaconIE
                 comandoBD = new OleDbCommand();
                 comandoBD.Connection = conexionBD;
                 comandoBD.CommandType = System.Data.CommandType.TableDirect;
+                comandoBD.CommandText = "Logs";
 
                 adaptadorBD = new OleDbDataAdapter(comandoBD);
                 adaptadorBD.Fill(objDataSet, "Logs");
@@ -258,6 +264,7 @@ namespace pryMilagrosChaconIE
                 comandoBD = new OleDbCommand();
                 comandoBD.Connection = conexionBD;
                 comandoBD.CommandType = System.Data.CommandType.TableDirect;
+                comandoBD.CommandText = "Logs";
 
                 adaptadorBD = new OleDbDataAdapter(comandoBD);
                 adaptadorBD.Fill(objDataSet, "Logs");
@@ -288,6 +295,7 @@ namespace pryMilagrosChaconIE
                 comandoBD = new OleDbCommand();
                 comandoBD.Connection = conexionBD;
                 comandoBD.CommandType = System.Data.CommandType.TableDirect;
+                comandoBD.CommandText = "Logs";
 
                 adaptadorBD = new OleDbDataAdapter(comandoBD);
                 adaptadorBD.Fill(objDataSet, "Logs");
@@ -319,6 +327,7 @@ namespace pryMilagrosChaconIE
                 comandoBD = new OleDbCommand();
                 comandoBD.Connection = conexionBD;
                 comandoBD.CommandType = System.Data.CommandType.TableDirect;
+                comandoBD.CommandText = "Logs";
 
                 adaptadorBD = new OleDbDataAdapter(comandoBD);
                 adaptadorBD.Fill(objDataSet, "Logs");
